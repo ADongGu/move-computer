@@ -1,0 +1,12 @@
+- **SHOW DATABASES;** 返回可用数据库的一个列表。包含在这个列表中的可能是MySQL内部使用的数据库
+- **SHOW TABLES;**  返回当前选择的数据库内可用表的列表。
+- **SHOW  COLUMNS要求给出一个表名（这个例子中的FROM customers）**，它对每个字段返回一行，行中包含字段名、数据类型、是否允许NULL、键信息、默认值以及其他信息（如字段cust_id的auto_increment）。返回表结构
+- **SHOW STATUS**，用于显示广泛的服务器状态信息；
+- **SHOW CREATE DATABASE和SHOW CREATE TABLE**，分别用来显示创建特定数据库或表的MySQL语句；
+- **SHOW GRANTS**，用来显示授予用户（所有用户或特定用户）的安全权限；
+- **SHOW ERRORS和SHOW WARNINGS**，用来显示服务器错误或警告消息
+- <img src="C:\Users\hzd\AppData\Roaming\Typora\typora-user-images\image-20220313130220070.png" alt="image-20220313130220070" style="zoom:50%;" />
+- Trim函数 RTrim()函数去掉值右边的所有空格。通过使用RTrim()，各个列都进行了整理。
+- 使用COUNT(*)对表中行的数目进行计数，不管表列中包含的是空值（NULL）还是非空值。 使用COUNT(column)对特定列中具有值的行进行计数，忽略NULL值。
+- **HAVING和WHERE的差别这里有另一种理解方法，WHERE在数据分组前进行过滤，HAVING在数据分组后进行过滤。这是一个重要的区别，WHERE排除的行不包括在分组中。这可能会改变计算值，从而影响HAVING子句中基于这些值过滤掉的分组。**
+- insert into xxx ()  values (1), (2), (3)...  插入xxx表的   ()字段  数据(1),(2),(3)....

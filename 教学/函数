@@ -1,0 +1,74 @@
+函数简单来说，就是一些语句，一个特定的功能
+
+举个例子，我要求1-n的和我可以这样写
+
+```c
+#include <stdio.h>
+int main(){
+	int n; scanf("%d",&n);
+	int sum = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		sum = sum + i;
+	}
+	printf("%d", sum);
+	return 0;
+}
+```
+
+我也可以把它写成一个函数
+
+```
+#include <stdio.h>
+
+int QiuHe(int left, int right){
+	int sum = 0;
+	for (int i = left; i <= right; i++){
+		sum += i;
+	}
+	return sum;
+}
+
+int main(){
+	int n; scanf("%d",&n);
+	printf("%d", QiuHe(1,n));
+	// 也可以这样输出答案
+	int sum = QiuHe(1,n);
+	printf("%d", sum);
+	return 0;
+}
+```
+
+
+
+像这样你应该就大概明白函数是什么东西了吧
+
+接下来介绍函数的语法
+
+```
+int       QiuHe  (int left, int right){}
+返回值类型  函数名   参数1		参数2
+
+
+double   fun1   () {}
+一个名叫fun1的函数，返回值为double类型，没有参数
+
+void  fun2 (int s){}
+一个名叫fun2的函数，没有返回值，有一个int类型的参数
+
+void fun3 (int a,  double c, double d, int e){}
+一个名叫fun3的函数，没有返回值，有4个不同类型的参数
+
+所以说， 函数的返回值有很多种类型，自己按需求来设，函数名也可以自己设，参数可以0到多个
+
+```
+
+
+
+
+
+
+
+
+
+​	
