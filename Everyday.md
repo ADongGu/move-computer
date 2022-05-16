@@ -299,3 +299,11 @@
 > - socket， bind， listen，accept，read，write close
 > - socket， connect， read， write， close
 
+<br/>
+
+## 2022年5月16日:
+
+> 网络编程：
+>
+> - 写了一个server 和 client，   发现原理不太明白，不知道为什么这样就能连接，希望接下来可以回答这个问题
+
